@@ -1,0 +1,15 @@
+member_feed:
+  url: /member/:id/feed
+  class: sfDoctrineRoute
+  options: { model: Member, type: object } 
+  param: { module: feed, action: member }
+  requirements:
+    id: \d+
+
+community_feed:
+  url: /community/:id/feed
+  class: sfDoctrineRoute
+  options: { model: Community, type: object }
+  param: { module: feed, action: community }
+  requirements:
+    id: \d+

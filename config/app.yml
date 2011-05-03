@@ -1,0 +1,6 @@
+all:
+  feed:
+    member: true
+    community: true
+    items: 30
+    output: rss2
